@@ -48,11 +48,6 @@ body {
   background-size: cover;
   ...
 }
-
-.content {
-  ...
-  margin: auto;
-  }
 ```
 
 ## Author
