@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <link rel="stylesheet" href="css/master.css">
+  <title>TechTown Survey</title>
+</head>
+
+<body>
+  <main>
+    <h1 id="title" class="title-text">TechTown Survey Form</h1>
+    <p id="description" class="description-text">Thank you for taking the time to help us improve, your feedback matters.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required /></label>
+
+        <label id="number-label">Age (optional) <input id="number" type="number" placeholder="Age" min="10" max="99" /></label>
+
+        <label>Which option best describes your current role?
+          <select id="dropdown" name="role">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>Would you recommend TechTown to a friend?</label>
+
+        <label><input name="recommend-radio" value="definitely" type="radio" /> Definitely</label>
+
+        <label><input name="recommend-radio" value="maybe" type="radio" /> Maybe</label>
+
+        <label><input name="recommend-radio" value="not sure" type="radio" /> Not sure</label>
+      </fieldset>
+
+      <fieldset>
+        <label>What is your favorite feature of TechTown?
+          <select name="favorite-feature">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply) </label>
+        <label><input name="needs-improvement" value="f-end-projects" type="checkbox" /> Front-end Projects</label>
+        <label><input name="needs-improvement" value="b-end-projects" type="checkbox" /> Back-end Projects</label>
+        <label><input name="needs-improvement" value="data-visualization" type="checkbox" /> Data Visualization</label>
+        <label><input name="needs-improvement" value="challenges" type="checkbox" /> Challenges</label>
+        <label><input name="needs-improvement" value="open-source-community" type="checkbox" /> Open Source Community</label>
+        <label><input name="needs-improvement" value="gitter-help-rooms" type="checkbox" /> Gitter help rooms</label>
+        <label><input name="needs-improvement" value="videos" type="checkbox" /> Videos</label>
+        <label><input name="needs-improvement" value="city-meetups" type="checkbox" /> City Meetups</label>
+        <label><input name="needs-improvement" value="wiki" type="checkbox" /> Wiki</label>
+        <label><input name="needs-improvement" value="forum" type="checkbox" /> Forum</label>
+        <label><input name="needs-improvement" value="additional-courses" type="checkbox" /> Additional Courses</label>
+      </fieldset>
+
+      <fieldset>
+        <label>Any comments or suggestions? <textarea placeholder="Enter your comment here..." rows="4" maxlength="300"></textarea></label>
+      </fieldset>
+
+      <input id="submit" type="submit" />
+    </form>
+  </main>
+</body>
+
+</html>
